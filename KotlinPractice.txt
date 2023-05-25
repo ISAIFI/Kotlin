@@ -1,0 +1,12 @@
+//Variable with Public Getter and Private Setter in Kotlin
+
+class MyClass {
+    var myProperty: String = "default"
+        private set
+}
+fun main() {
+   
+    var obj = MyClass()
+    obj.myProperty = "Asif" // Cannot assign to 'myProperty': the setter is private in 'MyClass'
+    println(obj.myProperty)
+}
